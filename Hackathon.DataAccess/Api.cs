@@ -1,7 +1,8 @@
 ﻿using System;
-//using System.Net.Http;
-//using System.Threading.Tasks;
-//using Newtonsoft.Json;
+using System.Collections.Generic;
+using System.Net.Http;
+using System.Threading.Tasks;
+using Newtonsoft.Json;
 using Hackathon.BusinessLayer;
 
 namespace Hackathon.DataAccess
@@ -12,22 +13,19 @@ namespace Hackathon.DataAccess
         {
         }
 
-        //public async Task<string> GetDataAsync(string url)
-        public string GetData(string url)
+        public async Task<List<Datum>> GetDataAsync(string url)
         {
-            string result = string.Empty;
-            /*
+            var data = new List<Datum>();
             using (var client = new HttpClient())
             {
                 HttpResponseMessage response = await client.GetAsync(url);
                 if (response.IsSuccessStatusCode)
                 {
-                    result = await response.Content.ReadAsStringAsync();
-                    //var responseResult = JsonConvert.DeserializeObject<Response>
+                    var datum = await response.Content.ReadAsStringAsync();
+                    data = JsonConvert.DeserializeObject<List<Datum>>(datum);
                 }
             }
-            */
-            return result;
+            return data;
         }
     }
 }
