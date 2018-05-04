@@ -1,12 +1,8 @@
-﻿using System;
-using System.Linq;
-using System.Web.Helpers;
-using System.Web.Mvc;
-using Hackathon.Web.Models;
+﻿using System.Web.Mvc;
 
 namespace Hackathon.Web.Controllers
 {
-    public class GoogleChartController : Controller
+    public class ChartController : Controller
     {
         [Route("GoogleChart")]
         public ActionResult Default()

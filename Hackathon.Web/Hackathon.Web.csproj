@@ -194,7 +194,8 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ContactController.cs" />
-    <Compile Include="Controllers\GoogleChartController.cs" />
+    <Compile Include="Controllers\DisplayController.cs" />
+    <Compile Include="Controllers\ChartController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="ErrorHandler\AiHandleErrorAttribute.cs" />
     <Compile Include="Filters\ReCaptchaFilter.cs" />
@@ -217,8 +218,8 @@
     <Content Include="Views\Contact\Default.cshtml" />
     <Content Include="Views\Contact\Success.cshtml" />
     <Content Include="Views\Contact\Error.cshtml" />
-    <Content Include="Views\GoogleChart\Default.cshtml" />
-    <Content Include="Views\GoogleChart\Display.cshtml" />
+    <Content Include="Views\Chart\Default.cshtml" />
+    <Content Include="Views\Display\Default.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
