@@ -2,7 +2,7 @@
 
 namespace Hackathon.BusinessLayer
 {
-    public class Datum
+    public class Data
     {
         public string Id { get; set; }
         public string S3Key { get; set; }
