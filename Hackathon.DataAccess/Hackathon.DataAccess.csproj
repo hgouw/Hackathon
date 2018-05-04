@@ -66,10 +66,6 @@
       <Project>{7283646f-6f54-4ad3-a3e6-797ce85ae3a2}</Project>
       <Name>Hackathon.BusinessLayer</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Hackathon.Common\Hackathon.Common.csproj">
-      <Project>{42f24c19-a7c4-4c5b-bb02-2e39e2fd25aa}</Project>
-      <Name>Hackathon.Common</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

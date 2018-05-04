@@ -46,12 +46,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Response.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Hackathon.Common\Hackathon.Common.csproj">
-      <Project>{42f24c19-a7c4-4c5b-bb02-2e39e2fd25aa}</Project>
-      <Name>Hackathon.Common</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
