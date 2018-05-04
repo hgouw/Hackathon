@@ -1,4 +1,5 @@
 ﻿using System.Web.Mvc;
+using Hackathon.DataAccess;
 
 namespace Hackathon.Web.Controllers
 {
@@ -7,7 +8,11 @@ namespace Hackathon.Web.Controllers
         [Route("Display")]
         public ActionResult Default ()
         {
-            return View();
+            using (var api = new Api())
+            {
+            }
+
+           return View();
         }
     }
 }
