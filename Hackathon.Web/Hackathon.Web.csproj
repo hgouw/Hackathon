@@ -130,9 +130,6 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
-    <Reference Include="Twilio, Version=5.8.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Twilio.5.8.2\lib\net451\Twilio.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Web.Razor">
@@ -193,7 +190,6 @@
   <ItemGroup>
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\DisplayController.cs" />
     <Compile Include="Controllers\ChartController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -203,8 +199,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\HtmlHelpers.cs" />
-    <Compile Include="Models\ContactModel.cs" />
-    <Compile Include="Models\GoogleChartModel.cs" />
+    <Compile Include="Models\ChartModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -215,9 +210,6 @@
     <Content Include="Views\Home\Default.cshtml" />
     <Content Include="Service References\Application Insights\ConnectedService.json" />
     <Content Include="Scripts\jquery-2.2.3.min.map" />
-    <Content Include="Views\Contact\Default.cshtml" />
-    <Content Include="Views\Contact\Success.cshtml" />
-    <Content Include="Views\Contact\Error.cshtml" />
     <Content Include="Views\Chart\Default.cshtml" />
     <Content Include="Views\Display\Default.cshtml" />
     <None Include="Web.Debug.config">

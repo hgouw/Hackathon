@@ -5,7 +5,7 @@ using System.Web;
 
 namespace Hackathon.Web.Models
 {
-    public class GoogleChartModel
+    public class ChartModel
     {
     }
 }
