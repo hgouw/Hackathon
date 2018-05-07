@@ -22,9 +22,11 @@ namespace Hackathon.Web.Controllers
         }
         */
 
-        public ActionResult Default()
+        public async Task<ActionResult> DefaultAsync()
         {
-            return View();
+            ViewBag.SyncOrAsync = "Asynchronous";
+            var api = new Api();
+            return View("Display", await api.GetDataAsync(ConfigurationManager.AppSettings["ApiUrl"]));
         }
     }
 }
